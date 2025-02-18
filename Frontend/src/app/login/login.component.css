@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to bottom right, #D2E9E9, #C4DFDF);
+    padding-bottom: 170px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 30px;
+    width: 500px;
+    padding: 40px;
+    top: 40%;
+    left: 30%;
+    transform: translate(30%, -25%);
+    background: #4F709C;
+    justify-content: center;
+    color: white;
+    justify-items: center;
+    box-shadow: 10px 10px 10px rgb(120, 120, 120);
+  }
+  
+  
+  
+  

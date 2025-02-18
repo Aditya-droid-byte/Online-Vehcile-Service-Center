@@ -1,0 +1,58 @@
+<app-header></app-header>
+<body>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Register</h1>
+                    <h6>Please enter your details</h6>
+                </div>
+                <form (submit)="registerCustomer()">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label"><h4>First Name</h4></label>
+                        <input type="text" name="firstName" [(ngModel)]="customer.firstName" class="form-control"
+                            id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label"><h4>Last Name</h4></label>
+                        <input type="text" name="lastName" [(ngModel)]="customer.lastName" class="form-control" id="lastName"
+                            placeholder="Last Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label"><h4>Username</h4></label>
+                        <input type="text" name="username" [(ngModel)]="customer.username" class="form-control" id="username"
+                            placeholder="Username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label"><h4>Email Address</h4></label>
+                        <input type="emailAddress" name="emailAddress" [(ngModel)]="customer.emailAddress" class="form-control" id="emailAddress"
+                            placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label"><h4>Password</h4></label>
+                        <input type="password" name="password" [(ngModel)]="customer.password" class="form-control" id="password"
+                            placeholder="Password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="residenceAddress" class="form-label"><h4>Residence Address</h4></label>
+                        <input type="text" name="residenceAddress" [(ngModel)]="customer.residenceAddress" class="form-control"
+                            id="residenceAddress" placeholder="Residence Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileNumber" class="form-label"><h4>Mobile Number</h4></label>
+                        <input type="text" name="mobileNumber" [(ngModel)]="customer.mobileNumber" class="form-control"
+                            id="mobileNumber" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button style="margin: 5px;" class="btn btn-success" type="submit">Register</button>
+                        <button style="margin: 5px;" class="btn btn-warning" type="button" routerLink="/home">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

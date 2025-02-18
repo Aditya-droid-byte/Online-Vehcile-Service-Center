@@ -1,0 +1,45 @@
+<app-header></app-header>
+ <div class="col-md-6 offset-md-3">
+    <h3>Update Request</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Vehicle Number</label>
+        <input type="text" class="form-control" id="vehicleNumber" [(ngModel)]="request.vehicleNumber" name="vehicleNumber">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Vehicle Name</label>
+        <input type="text" class="form-control" id="vehicleName" [(ngModel)]="request.vehicleName" name="vehicleName">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Vehicle Brand</label>
+        <input type="text" class="form-control" id="vehicleBrand" [(ngModel)]="request.vehicleBrand" name="vehicleBrand">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Vehicle Model</label>
+        <input type="text" class="form-control" id="vehicleModel" [(ngModel)]="request.vehicleModel" name="vehicleModel">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Service Type</label>
+        <input type="text" class="form-control" id="serviceType" [(ngModel)]="request.serviceType" name="serviceType">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Problem Description</label>
+        <input type="text" class="form-control" id="problemDescription" [(ngModel)]="request.problemDescription" name="problemDescription">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Manufacturing Date</label>
+        <input type="date" class="form-control" id="manufacturingDate" [(ngModel)]="request.manufacturingDate" name="manufacturingDate">
+      </div>
+      <br>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+  </div>
+  
+  
+  

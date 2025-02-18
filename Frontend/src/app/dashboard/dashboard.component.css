@@ -1,0 +1,24 @@
+.color-tile {
+    height: 150px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(to right, #ff4d4d, #ffaf40);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.color-tile.green {
+    background: linear-gradient(to right, #00cc99, #00ff99);
+}
+
+.color-tile.blue {
+    background: linear-gradient(to right, #0066ff, #0099ff);
+}
+
+.color-tile.yellow {
+    background: linear-gradient(to right, #ffcc00, #ffff00);
+}

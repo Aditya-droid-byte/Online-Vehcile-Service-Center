@@ -1,0 +1,19 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+    <a style="color: white; margin-left: 10px; font-weight: bold;" class="navbar-brand" href="#">Vehicle Service Center System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       </ul>
+
+       <div class="mx-2" *ngIf="isLoggedIn()">
+          <button style="margin: 5px;"class="btn btn-danger" (click)="logout()">Logout</button>
+       </div>
+
+       <form class="d-flex" role="search" *ngIf="!isLoggedIn()">
+         <button style="color: white; margin-right: 15px;" class="nav-link active" routerLink="/home" >Home</button>
+       </form>
+
+    </div>
+ </nav>

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+.counter {
+	padding: 16px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.row:after, .row:before {
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+	padding: 10px;
+}
+
+.form-group{
+	padding-top: 10px;
+}

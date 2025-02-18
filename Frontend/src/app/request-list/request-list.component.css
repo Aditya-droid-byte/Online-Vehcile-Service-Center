@@ -1,0 +1,13 @@
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.box {
+    margin: 20px 20px;
+}
+  
+.custom-button{
+    width: 100%;
+}

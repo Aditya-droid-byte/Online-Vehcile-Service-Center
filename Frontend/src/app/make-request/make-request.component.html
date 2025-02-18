@@ -1,0 +1,73 @@
+<app-header></app-header>
+ 
+ <div class="col-md-6 offset-md-3">
+  <h3 style="text-align: center;">Make Request</h3>
+  <form name="form" #f="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="vehicleNumber">Vehicle Number</label>
+      <input type="text" class="form-control" id="vehicleNumber" [(ngModel)]="request.vehicleNumber" name="vehicleNumber" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="vehicleName">Vehicle Name</label>
+      <input type="text" class="form-control" id="vehicleName" [(ngModel)]="request.vehicleName" name="vehicleName" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="vehicleBrand">Vehicle Brand</label>
+      <input type="text" class="form-control" id="vehicleBrand" [(ngModel)]="request.vehicleBrand" name="vehicleBrand" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="vehicleModel">Vehicle Model</label>
+      <input type="text" class="form-control" id="vehicleModel" [(ngModel)]="request.vehicleModel" name="vehicleModel" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="serviceType">Service Type</label>
+      <select class="form-control" id="serviceType" [(ngModel)]="request.serviceType" name="serviceType" required>
+        <option value="" disabled selected>Choose...</option>
+        <!-- <option *ngFor="let service of services" [value]="service.service_name">{{ service.service_name }}</option> -->
+        <option value="Car is not starting Inspection">Car is not starting Inspection</option>
+        <option value="Change Oil and Filter">Change Oil and Filter</option>
+        <option value="Brake Pads Replacement">Brake Pads Replacement</option>
+        <option value="Timing Belt Replacement">Timing Belt Replacement</option>
+        <option value="Pre-purchase Car Inspection">Pre-purchase Car Inspection</option>
+        <option value="Battery Replacement">Battery Replacement</option>
+        <option value="Starter Replacement">Starter Replacement</option>
+        <option value="Alternator Replacement">Alternator Replacement</option>
+        <option value="Serpentine/Drive Belt Replacement">Serpentine/Drive Belt Replacement</option>
+        <option value="Spark Plugs Replacement">Spark Plugs Replacement</option>
+        <option value="Water Pump Replacement">Water Pump Replacement</option>
+        <option value="Fuel Pump Replacement">Fuel Pump Replacement</option>
+        <option value="Radiator Replacement">Radiator Replacement</option>
+        <option value="Valve Cover Gasket Replacement">Valve Cover Gasket Replacement</option>
+        <option value="Oxygen Sensor Replacement">Oxygen Sensor Replacement</option>
+        <option value="Thermostat Replacement">Thermostat Replacement</option>
+        <option value="Wheel Bearings Replacement">Wheel Bearings Replacement</option>
+        <option value="Axle/CV Shaft Assembly Replacement">Axle/CV Shaft Assembly Replacement</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="problemDescription">Problem Description</label>
+      <input type="text" class="form-control" id="problemDescription" [(ngModel)]="request.problemDescription" name="problemDescription" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="manufacturingDate">Vehicle Manufacturing Date</label>
+      <input type="date" class="form-control" id="manufacturingDate" [(ngModel)]="request.manufacturingDate" name="manufacturingDate" required>
+    </div>
+    <br>
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>
+
+
+
+
+  
+  
+  
+  

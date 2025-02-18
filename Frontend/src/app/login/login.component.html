@@ -1,0 +1,32 @@
+
+<app-header></app-header>
+<body>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Please enter your Username & Password</h6>
+                </div>
+                <form (submit)="checkLogin()">
+                    <div class="mb-3">
+                        <label for="username" class="form-label"><h4>Username</h4></label>
+                        <input type="text" name="username" [(ngModel)]="username" class="form-control" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label"><h4>Password</h4></label>
+                        <input type="password" name="password" [(ngModel)]="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button style="margin: 5px;" class="btn btn-success" type="submit">Login</button>
+                        <button style="margin: 5px;" class="btn btn-warning" type="button" routerLink="/home">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
